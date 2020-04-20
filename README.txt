@@ -1,4 +1,4 @@
-The project's files can be found in the following five folders:
+The project's files can be found in the following folders:
 
 1. Data
 - Python code used to convert the .txt files into .csv files for training and testing.
