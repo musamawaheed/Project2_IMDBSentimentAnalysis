@@ -1,0 +1,70 @@
+all on 25k comments and 10 folds CV
+
+
+estimators_full = [('tfidf', TfidfVectorizer(max_features=100000, stop_words=stop_words, ngram_range=(1, 4), strip_accents='unicode', token_pattern=r'\w{1,}', min_df=5)), ('logreg', LogisticRegression(solver='liblinear', C=10))]
+0.9103999999999999
+[Finished in 470.5s]
+
+ngram_range=(1, 2)
+
+0.9103600000000002
+[Finished in 139.7s]
+
+now without min_df=5
+0.9110000000000001   ----> BEST!
+[Finished in 139.2s]
+
+now also without token_pattern=r'\w{1,}'
+0.90716
+[Finished in 140.3s]
+
+now with bigger stopword list (token pattern added again):
+0.9097199999999999
+[Finished in 129.6s]
+
+now with bigger stopword list and n_gram=(1,4)
+0.91012
+[Finished in 394.1s]
+
+same with old stop-word list (difference to first attempt is only min_df=5)
+0.9101199999999998
+[Finished in 464.9s]
+
+now ngram_range=(1,3)
+0.9099600000000001
+[Finished in 293.1s]
+
+
+OPTIMIZING C...  to 12:
+0.9117599999999999
+Score on kaggle 0.90573
+
+C=15: 0.9107999999999998
+C=14: 0.9106400000000001
+C=13: 0.90984
+C=11: 0.9104399999999998
+C=16: 0.9114000000000001
+C=17: 0.9117200000000001
+C=18: 0.9106400000000001
+
+Now: Based on random search:
+max_features=100000, stop_words=None, ngram_range=(1, 3), strip_accents='ascii', token_pattern=r'\w{1,}'C=20
+0.91092
+
+ngram_range=(1, 2): 0.909560000000000
+ngram_range=(1, 3), C=21: 0.9107199999999999
+ngram_range=(1, 3), C=22: 0.9114000000000001
+ngram_range=(1, 3), C=25: 0.9094399999999998
+ngram_range=(1, 3), C=23: 0.9102
+
+
+strip_accents='unicode', C=22: 0.9116
+with stopwords = 0.9117200000000001
+strip_accents='ascii': 0.9118 
+strip_accents='ascii', C=30: 0.9120800000000001
+C=35: 0.9097200000000001
+C=32: 0.9104800000000001
+C=31: 0.9109200000000002
+C=29: 0.9124400000000001 ==> BEST SCORE -> No improvement on Kaggle
+C=27: 0.9092399999999999
+C=29: 0.9104800000000001

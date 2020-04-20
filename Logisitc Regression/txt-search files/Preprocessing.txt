@@ -1,0 +1,35 @@
+train_length = 25000
+skf = StratifiedKFold(n_splits=10, random_state=7500)
+cv = CountVectorizer(binary=False)
+LogisticRegression(C=0.1, solver='liblinear')
+0.8880399999999999
+[Finished in 48.0s]
+0.8865599999999999
+[Finished in 46.6s]
+0.889
+[Finished in 47.1s]
+
+KEEP NUMBERS:
+0.8888000000000001
+[Finished in 46.7s]
+0.88892
+[Finished in 46.6s]
+0.8881599999999998
+[Finished in 46.2s]
+
+DON'T APPLY REPLACE_WITH_SPACE
+0.8880400000000002
+[Finished in 46.3s]
+0.8890799999999999
+[Finished in 46.6s]
+0.8897600000000001
+[Finished in 46.9s]
+
+DON'T APPLY REPLACE_NO_SPACE
+0.8910399999999999
+[Finished in 40.0s]
+0.88988
+[Finished in 38.4s]
+0.8919600000000001
+[Finished in 37.5s]
+=>Slightly better without this preprocessing

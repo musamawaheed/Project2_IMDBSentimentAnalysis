@@ -1,0 +1,141 @@
+data_length = 1000
+split_ratio = 0.67
+BoW_length = 500
+laplace = 20
+
+Accuracies:
+74.84848484848486% 11s
+74.24242424242425% 10s
+72.42424242424242% 10s
+74.54545454545455% 10s
+74.54545454545455% 10s
+
+
+laplace = 2
+
+Accuracies:
+71.81818181818181% 11s
+77.87878787878788% 10s
+75.15151515151514% 10s
+74.84848484848486% 10s
+79.0909090909091% 10s
+
+
+laplace = 5
+
+Accuracies:
+81.21212121212122% 12s
+80.0% 10s
+79.0909090909091% 10s
+70.3030303030303% 10s
+70.0% 10s
+
+
+laplace = 10
+
+Accuracies:
+73.63636363636363% 12s
+72.42424242424242% 10s
+71.51515151515152% 10s
+79.0909090909091% 10s
+73.93939393939394% 10s
+
+
+laplace = 100
+
+Accuracies:
+78.18181818181819% 12s
+76.36363636363637% 10s
+73.63636363636363% 10s
+69.6969696969697% 10s
+76.36363636363637% 10s
+
+
+data_length = 5000
+split_ratio = 0.67
+BoW_length = 500
+laplace = 2
+
+Accuracies:
+77.15151515151516% 53s
+74.84848484848486% 52s
+77.39393939393939% 52s
+
+
+BoW_length = 100
+Accuracies:
+64.96969696969697% 11s
+63.030303030303024% 9s
+66.42424242424242% 9s
+
+BoW_length = 1000
+Accuracies:
+80.0% 145s
+81.0909090909091% 147s
+79.45454545454545% 146s
+81.03030303030303% 146s
+
+BoW_lenght = 2000
+Accuracies:
+82.9090909090909% 451s
+
+BoW_lenght = 5000
+Accuracy: 84.96969696969697% 2598s
+
+
+data_length = 15000
+split_ratio = 0.75
+BoW_length = 5000
+laplace = 2
+
+Accuracy: 84.37333333333333%
+
+
+
+Printed files...with original Naive Bayes: prediction_NB.csv
+data_length = 15000
+split_ratio = 0.75
+BoW_length = 5000
+laplace = 2
+Accuracy validation: 84.37333333333333%
+[Finished in 45620.4s]
+
+Printed files...with original Naive Bayes: prediction_NB_faster.csv
+data_length = 25000
+split_ratio = 0.99
+BoW_length = 30000
+laplace = 2
+Accuracy validation: 87.2%
+[Finished in 54463.9s]
+
+data_length = 10000
+split_ratio = 0.75
+BoW_length = 3000
+laplace = 2
+Accuracy: 84.56%
+TP:1060, TN:1054, FP:197, FN:189
+
+data_length = 12500
+split_ratio = 0.75
+BoW_length = 5000
+laplace = 2
+Accuracy: 84.512%
+TP:1336, TN:1305, FP:239, FN:245
+
+data_length = 25000
+split_ratio = 0.75
+BoW_length = 5000
+laplace = 2
+Accuracy: 84.88%
+TP:2637, TN:2668, FP:483, FN:462
+
+
+Printed files...prediction_NB.csv
+data_length = 25000
+split_ratio = 0.80
+BoW_length = 30000
+laplace = 2
+Accuracy: 85.26%
+TP:2051, TN:2212, FP:291, FN:446
+[Finished in 53945.3s]
+
